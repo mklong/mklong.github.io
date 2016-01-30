@@ -1,2 +1,4 @@
 # mklong.github.io
-my blog
+
+[This is my chinese blog ！](http://mklong.info)
+

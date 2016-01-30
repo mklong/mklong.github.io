@@ -3,17 +3,22 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Map of posts | Milk浓</title>
+  <title>第一篇 | Milk浓</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="A map of geo-tagged posts on Milk浓">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Map of posts">
-<meta property="og:url" content="http://mklong.info/mapofposts/index.html">
+  <meta name="description" content="从今天起开始写博客啦!当然还有码码码！
+1234#include&amp;lt;iostream&amp;gt;void main()&amp;#123;    std::cout &amp;lt;&amp;lt; &quot;Hello World!&quot; &amp;lt;&amp;lt; std::endl;&amp;#125;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="第一篇">
+<meta property="og:url" content="http://mklong.info/2016/01/30/first/index.html">
 <meta property="og:site_name" content="Milk浓">
-<meta property="og:description" content="A map of geo-tagged posts on Milk浓">
+<meta property="og:description" content="从今天起开始写博客啦!当然还有码码码！
+1234#include&amp;lt;iostream&amp;gt;void main()&amp;#123;    std::cout &amp;lt;&amp;lt; &quot;Hello World!&quot; &amp;lt;&amp;lt; std::endl;&amp;#125;">
+<meta property="og:image" content="http://mklong.info/img/1.png">
+<meta property="og:updated_time" content="2016-01-30T09:42:30.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Map of posts">
-<meta name="twitter:description" content="A map of geo-tagged posts on Milk浓">
+<meta name="twitter:title" content="第一篇">
+<meta name="twitter:description" content="从今天起开始写博客啦!当然还有码码码！
+1234#include&amp;lt;iostream&amp;gt;void main()&amp;#123;    std::cout &amp;lt;&amp;lt; &quot;Hello World!&quot; &amp;lt;&amp;lt; std::endl;&amp;#125;">
   
     <link rel="alternate" href="/atom.xml" title="Milk浓" type="application/atom+xml">
   
@@ -64,12 +69,16 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main"><article id="undefined-undefined" class="article article-type-undefined" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-first" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/mapofposts/index.html" class="article-date">
-  <time datetime="2016-01-30T11:14:32.889Z" itemprop="datePublished">2016-01-30</time>
+    <a href="/2016/01/30/first/" class="article-date">
+  <time datetime="2016-01-30T08:25:35.000Z" itemprop="datePublished">2016-01-30</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/随笔/">随笔</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
@@ -78,7 +87,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Map of posts
+      第一篇
     </h1>
   
 
@@ -86,93 +95,18 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
-<script src="https://maps.googleapis.com/maps/api/js"></script>
+        <p><img src="/img/1.png" alt="image 1"></p>
+<p>从今天起开始写博客啦!当然还有码码码！</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; <span class="string">"Hello World!"</span> &lt;&lt; <span class="built_in">std</span>::endl;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<script type="text/javascript">
-function initialise() {
-  myLatlng = new google.maps.LatLng(54.559323, -3.321304);
-  mapOptions = {
-    zoom: 1,
-    center: myLatlng,
-    mapTypeId: google.maps.MapTypeId.ROADMAP,
-  }
-  geocoder = new google.maps.Geocoder();
-  infoWindow = new google.maps.InfoWindow;
-  map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-  xmlUrl = "/locations.xml";
-  loadMarkers();
-}
-
-function downloadUrl(url, callback) {
-  var request = window.ActiveXObject ?
-    new ActiveXObject('Microsoft.XMLHTTP') :
-    new XMLHttpRequest;
-  request.onreadystatechange = function() {
-    if (request.readyState == 4) {
-      //request.onreadystatechange = doNothing;
-      callback(request, request.status);
-    }
-  };
-  request.open('GET', url, true);
-  request.send(null);
-}
-
-function bindInfoWindow(marker, map, infoWindow, html) {
-  google.maps.event.addListener(marker, 'click', function() {
-    infoWindow.setContent(html);
-    infoWindow.open(map, marker);
-  });
-}
-
-function loadMarkers() {
-  map.markers = map.markers || []
-  downloadUrl(xmlUrl, function(data) {
-    var xml = data.responseXML;
-    markers = xml.documentElement.getElementsByTagName("location");
-    for (var i = 0; i < markers.length; i++) {
-      var title = markers[i].getAttribute("title");
-      var url = markers[i].getAttribute("url");
-      var lastmod = markers[i].getAttribute("lastmod");
-      var point = new google.maps.LatLng(
-        parseFloat(markers[i].getAttribute("lat")),
-        parseFloat(markers[i].getAttribute("lng")));
-      var html = "<div class='infowindow'><b>" + title + "</b> <br/><a href='" + url + "'>" + url + "</a><br/> " + lastmod + " <br/></div>";
-      var marker = new google.maps.Marker({
-        map: map,
-        position: point,
-        title: title
-      });
-      map.markers.push(marker);
-      bindInfoWindow(marker, map, infoWindow, html);
-    } 
-    centreMap();
-  });
-}
-
-function centreMap() {
-  var latLngBounds = new google.maps.LatLngBounds();
-  for (var i = 0; i < map.markers.length; i++) {
-    var currentMarker = map.markers[i];
-    var latLngPoint = new google.maps.LatLng(currentMarker.position.lat(), currentMarker.position.lng());
-    latLngBounds.extend(latLngPoint);
-  }
-  map.setCenter(latLngBounds.getCenter());
-  map.fitBounds(latLngBounds); 
-}
-
-
-
-google.maps.event.addDomListener(window, 'load', initialise);
-</script>
-
-<div id="map-canvas" style="height: 500px; width: 90%;"></div>
       
     </div>
     <footer class="article-footer">
-      <a data-url="" data-id="undefined" class="article-share-link">Share</a>
+      <a data-url="http://mklong.info/2016/01/30/first/" data-id="cik0why280000b1bqt3sotwun" class="article-share-link">Share</a>
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
+
     </footer>
   </div>
   
@@ -180,6 +114,38 @@ google.maps.event.addDomListener(window, 'load', initialise);
   
 </article>
 
+
+  <section id="comments">
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="post-first" data-title="第一篇" data-url="http://mklong.info/2016/01/30/first/"></div>
+    <!-- 多说评论框 end -->
+    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:'mklong'};
+      (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+      })();
+      </script>
+    <!-- 多说公共JS代码 end -->
+
+    <div class="ds-share flat" data-thread-key="post-first" data-title="第一篇" data-images="" data-content="" data-url="http://mklong.info/2016/01/30/first/" >
+    <div class="ds-share-inline">
+      <ul  class="ds-share-icons-16">
+        <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+        <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+        <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      </ul>
+      <div class="ds-share-icons-more">
+      </div>
+    </div>
+ </div>
+
+  </section>
 
 
 

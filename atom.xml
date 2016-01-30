@@ -4,7 +4,7 @@
   <subtitle><![CDATA[自从读了《演员的自我修养》后，就变成了一名程序猿]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://mklong.info/"/>
-  <updated>2016-01-30T02:46:17.000Z</updated>
+  <updated>2016-01-30T09:42:30.000Z</updated>
   <id>http://mklong.info/</id>
   
   <author>
@@ -15,21 +15,24 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[markdown test]]></title>
-    <link href="http://mklong.info/2016/01/29/%E4%BD%A0%E5%A5%BDAIUI/"/>
-    <id>http://mklong.info/2016/01/29/你好AIUI/</id>
-    <published>2016-01-29T09:02:31.000Z</published>
-    <updated>2016-01-30T02:46:17.000Z</updated>
-    <content type="html"><![CDATA[<h6 id="code"><a href="#code" class="headerlink" title="code"></a>code</h6><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">// Created by mklong on 15/11/8.</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"></span><br><span class="line"><span class="preprocessor">#<span class="keyword">ifndef</span> __ETCD4CPP_H__</span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">define</span> __ETCD4CPP_H__</span></span><br><span class="line"></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;string&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">"rapidjson/document.h"</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">"rapidjson2struct/rapidjson2struct.h"</span></span></span><br><span class="line"><span class="preprocessor">#<span class="keyword">include</span> <span class="string">"rest_client/restclient.h"</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> rapidjson2struct;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> etcd&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">struct</span> <span class="keyword">create_in_order_options_t</span>&#123;</span><br><span class="line">        <span class="keyword">size_t</span>      ttl;</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">enum</span> prev_exist_type_e &#123;</span><br><span class="line">        PrevIgnore,</span><br><span class="line">        PrevExist,</span><br><span class="line">        PrevNoExist,</span><br><span class="line">    &#125;;</span><br></pre></td></tr></table></figure>
-<h6 id="flowchart"><a href="#flowchart" class="headerlink" title="flowchart"></a>flowchart</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">graph LR&#10;A--&#62;B</span><br></pre></td></tr></table></figure>
-<h5 id="sequence"><a href="#sequence" class="headerlink" title="sequence"></a>sequence</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sequenceDiagram&#10;A-&#62;&#62;B: How are you?&#10;B-&#62;&#62;A: Great!</span><br></pre></td></tr></table></figure>
-<h6 id="gantt"><a href="#gantt" class="headerlink" title="gantt"></a>gantt</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gantt&#10;dateFormat YYYY-MM-DD&#10;section S1&#10;T1: 2014-01-01, 9d&#10;section S2&#10;T2: 2014-01-11, 9d&#10;section S3&#10;T3: 2014-01-02, 9d</span><br></pre></td></tr></table></figure>
+    <title><![CDATA[第一篇]]></title>
+    <link href="http://mklong.info/2016/01/30/first/"/>
+    <id>http://mklong.info/2016/01/30/first/</id>
+    <published>2016-01-30T08:25:35.000Z</published>
+    <updated>2016-01-30T09:42:30.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="/img/1.png" alt="image 1"></p>
+<p>从今天起开始写博客啦!当然还有码码码！</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; <span class="string">"Hello World!"</span> &lt;&lt; <span class="built_in">std</span>::endl;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
     <summary type="html">
-    <![CDATA[<h6 id="code"><a href="#code" class="headerlink" title="code"></a>code</h6><figure class="highlight c++"><table><tr><td class="gutter"><pre>]]>
+    <![CDATA[<p><img src="/img/1.png" alt="image 1"></p>
+<p>从今天起开始写博客啦!当然还有码码码！</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><spa]]>
     </summary>
     
-      <category term="AI" scheme="http://mklong.info/tags/AI/"/>
+      <category term="随笔" scheme="http://mklong.info/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="随笔" scheme="http://mklong.info/categories/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
